@@ -44,6 +44,16 @@ class Stack {
   clear() {
     this.items = [];
   }
+
+  // 스택에 특정 요소가 포함되어 있는지 확인
+  contains(element) {
+    return this.items.includes(element);
+  }
+
+  // 스택의 요소를 배열로 반환
+  toArray() {
+    return [...this.items];
+  }
 }
 
 /**
@@ -89,6 +99,16 @@ class Queue {
   // 큐 초기화
   clear() {
     this.items = [];
+  }
+
+  // 큐에 특정 요소가 포함되어 있는지 확인
+  contains(element) {
+    return this.items.includes(element);
+  }
+
+  // 큐의 요소를 배열로 반환
+  toArray() {
+    return [...this.items];
   }
 }
 
